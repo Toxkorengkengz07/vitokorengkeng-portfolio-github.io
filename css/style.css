@@ -1,15 +1,15 @@
 .jumbotron {
   padding-top: 6rem;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--bs-body-bg);
 }
 /*
   img {
   width: 200;
 } */
-.about {
+/* .about {
   background-color: rgb(255, 255, 255);
 }
 .contact {
   background-color: rgb(255, 255, 255);
-}
+} */
 /* hero */

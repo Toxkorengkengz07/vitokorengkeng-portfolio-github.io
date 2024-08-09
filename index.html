@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-lg  shadow-sm fixed-top" style="background-color: var(--bs-body-bg);">
       <div class="container ">
         <a class="navbar-brand" href="#">Vito</a>
         <button
@@ -50,6 +50,25 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
+            <li class="nav-items dropdown"> 
+                <button class="btn nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-cloud-sun theme-icon-active"data-theme-icon-active="bi-cloud-sun"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end ">
+                    <!-- light button -->
+                  <li> <button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="light" >
+                    <i class="bi bi-cloud-sun me-2 opacity-50"data-theme-icon="bi-cloud-sun"></i>
+                Light</button></li>
+                <!-- dark button -->
+                  <li><button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="dark" >
+                    <i class="bi bi-cloud-moon me-2 opacity-50"data-theme-icon="bi-cloud-moon"></i>
+                Dark</button></li>
+                <!-- Auto button -->
+                  <li><button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="auto" >
+                    <i class="bi bi-square-half me-2 opacity-50"data-theme-icon="bi-square-half"></i>
+                Auto</button></li>
+                </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -75,15 +94,18 @@
     </div>
   </section><!-- End Hero -->
       <div class="social-links mt-3 text-center">
-        <a href="https://web.facebook.com/vito.korengkeng07" class="linkedin"
+        <a href="www.linkedin.com/in/vito-korengkeng" class="linkedin"
           ><i class="bi bi-linkedin"></i
         ></a>
-        <a href="https://web.facebook.com/vito.korengkeng07" class="facebook"
+        <a href="https://web.facebook.com/vito.korengkeng31" class="facebook"
           ><i class="bi bi-facebook"></i></a>
-        <a href="https://web.facebook.com/vito.korengkeng07" class="instagram"
+        <a href="https://www.instagram.com/toxkorengkengz07/" class="instagram"
           ><i class="bi bi-instagram"></i></a>
-        <a href="https://web.facebook.com/vito.korengkeng07" class="github"
+        <a href="https://github.com/Toxkorengkengz07" class="github"
           ><i class="bi bi-github"></i></a>
+          <div class="btn-cv">
+            <button type="button" class="btn btn-primary">Download CV <i class="bi bi-file-earmark-arrow-down-fill"></i></button>
+          </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#0099ff"
@@ -128,6 +150,16 @@
       </svg>
     </section>
     <!-- about akhir -->
+     <!-- skills -->
+      <section id="skills" class="skills">
+        <div class="container">
+            <div class="row text-center">
+                <H2>Skills</H2>
+                <i class="fa-brands fa-html5"></i>
+            </div>
+        </div>
+      </section>
+      <!-- Akhir Skill -->
     <!-- kontak -->
     <section id="contact" class="contact">
       <div class="container">
