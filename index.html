@@ -45,7 +45,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#hero"
+              <a
+                class="nav-link active bg-body-tertiary"
+                aria-current="page"
+                href="#hero"
                 >Home</a
               >
             </li>
@@ -130,17 +133,14 @@
         class="rounded-circle img-thumbnail"
         width="200"
       />
-
       <!-- ======= Hero Section ======= -->
       <section
         id="hero"
         class="d-flex flex-column justify-content-center align-items-center"
       >
-        <div class="hero-container" data-aos="fade-in">
-          <h1 class="text-primary">
-            Hi I'm <span class="typed text-primary" type-name-text></span>
-          </h1>
-        </div>
+        <h1 class="text-primary">
+          Hi I'm <span class="typed text-primary" type-name-text></span>
+        </h1>
       </section>
       <!-- End Hero -->
 
@@ -159,7 +159,7 @@
         ></a>
         <div class="btn-cv">
           <a href="my-cv/myCV.pdf">
-            <button type="button" class="btn btn-primary">
+            <button type="button" class="btn btn-outline-primary">
               Download CV <i class="bi bi-file-earmark-arrow-down-fill"></i>
             </button>
           </a>
@@ -193,7 +193,7 @@
               alt="foto"
             />
           </div>
-          <div class="col-4 img-ab">
+          <div class="col-4 img-ab float-md-end">
             <li>
               <i class="bi bi-chevron-right"></i> <strong>Name:</strong>
               <span>Vito Julio Korengkeng</span>
@@ -266,7 +266,7 @@
           </div>
           <div class="col-md-4 col-6 logo-container">
             <img
-              src="logo/photoshop.png"
+              src="logo/Photoshop.png"
               alt="Photoshop logo"
               class="img-fluid"
             />
@@ -310,17 +310,26 @@
                   class="form-control"
                   id="name"
                   aria-describedby="name"
+                  placeholder="your name"
                 />
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" />
+                Email
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="name@gmail.com"
+                  value="name@gmail.com"
+                />
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan</label>
                 <textarea class="form-control" id="pesan" rows="3"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">kirim</button>
+              <button type="submit" class="btn btn-outline-primary">
+                kirim
+              </button>
             </form>
           </div>
         </div>

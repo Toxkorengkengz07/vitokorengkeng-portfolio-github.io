@@ -35,11 +35,6 @@
   box-shadow: 0 0 15px rgba(19, 133, 255, 0.7); /* Efek cahaya biru */
 }
 
-img-about {
-  width: 100px;
-  height: 100px;
-}
-
 /* CSS untuk img-about */
 .img-about img {
   width: 100%; /* Membuat gambar responsif */
@@ -63,6 +58,31 @@ img-about {
 
 .img-ab li {
   margin-bottom: 10px; /* Menambahkan sedikit jarak antara item */
+  display: flex; /* Menggunakan flexbox untuk align icon dan teks */
+  align-items: center; /* Vertikal align ikon dan teks */
+}
+
+.img-ab i {
+  margin-right: 10px; /* Menambahkan jarak antara ikon dan teks */
+  color: #007bff; /* Warna biru untuk ikon */
+}
+
+.img-ab strong {
+  margin-right: 5px; /* Menambahkan jarak antara strong dan span */
+}
+
+/* ajsdf */
+.img-ab {
+  padding: 0; /* Menghilangkan padding default */
+}
+
+.img-ab ul {
+  list-style: none; /* Menghilangkan bullet points dari ul */
+  padding: 0; /* Menghilangkan padding default */
+}
+
+.img-ab li {
+  margin-bottom: 10px; /* Menambahkan jarak antara item */
   display: flex; /* Menggunakan flexbox untuk align icon dan teks */
   align-items: center; /* Vertikal align ikon dan teks */
 }
