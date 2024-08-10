@@ -13,3 +13,65 @@
   background-color: rgb(255, 255, 255);
 } */
 /* hero */
+.skills {
+  height: 500px; /* Sesuaikan dengan tinggi yang diinginkan */
+}
+.logo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+.logo-container img {
+  width: 100px;
+  height: 100px;
+  margin: 0 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan sedikit bayangan */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Menambahkan transisi untuk efek hover */
+}
+
+.logo-container img:hover {
+  transform: scale(1.1); /* Zoom-in effect */
+  box-shadow: 0 0 15px rgba(19, 133, 255, 0.7); /* Efek cahaya biru */
+}
+
+img-about {
+  width: 100px;
+  height: 100px;
+}
+
+/* CSS untuk img-about */
+.img-about img {
+  width: 100%; /* Membuat gambar responsif */
+  height: auto; /* Menjaga aspek rasio gambar */
+  border-radius: 50%; /* Membuat gambar bulat */
+  float: left; /* Menyusun gambar di sebelah kiri */
+  margin: 10px; /* Memberikan sedikit jarak di sekitar gambar */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan sedikit bayangan */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Menambahkan transisi untuk efek hover */
+}
+
+.img-about img:hover {
+  transform: scale(1.1); /* Zoom-in effect pada hover */
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.7); /* Efek cahaya biru pada hover */
+}
+
+.img-ab {
+  list-style: none; /* Menghilangkan bullet points dari li */
+  padding: 0; /* Menghilangkan padding default */
+}
+
+.img-ab li {
+  margin-bottom: 10px; /* Menambahkan sedikit jarak antara item */
+  display: flex; /* Menggunakan flexbox untuk align icon dan teks */
+  align-items: center; /* Vertikal align ikon dan teks */
+}
+
+.img-ab i {
+  margin-right: 10px; /* Menambahkan jarak antara ikon dan teks */
+  color: #007bff; /* Warna biru untuk ikon */
+}
+
+.img-ab strong {
+  margin-right: 5px; /* Menambahkan jarak antara strong dan span */
+}
