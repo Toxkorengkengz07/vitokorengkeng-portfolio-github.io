@@ -12,10 +12,19 @@
 .contact {
   background-color: rgb(255, 255, 255);
 } */
-/* hero */
+/* sosmed */
+.social-links a {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+}
+/* end */
+
 .skills {
   height: 500px; /* Sesuaikan dengan tinggi yang diinginkan */
 }
+/* image bagian skill */
 .logo-container {
   display: flex;
   justify-content: flex-start;
@@ -26,15 +35,27 @@
   width: 130px;
   height: 110px;
   margin: 0 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Menambahkan sedikit bayangan */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Menambahkan transisi untuk efek hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .logo-container img:hover {
-  transform: scale(1.1); /* Zoom-in effect */
-  box-shadow: 0 0 15px rgba(19, 133, 255, 0.7); /* Efek cahaya biru */
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(19, 133, 255, 0.7);
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+/* end */
 /* CSS untuk img-about */
 .img-about img {
   width: 100%; /* Membuat gambar responsif */
@@ -95,6 +116,7 @@
 .img-ab strong {
   margin-right: 5px; /* Menambahkan jarak antara strong dan span */
 }
+
 /* download cv button */
 /* From Uiverse.io by barisdogansutcu */
 .download-button {

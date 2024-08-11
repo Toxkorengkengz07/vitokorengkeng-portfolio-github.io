@@ -300,3 +300,13 @@ form.addEventListener("submit", (e) => {
     .then((response) => console.log("Success!", response))
     .catch((error) => console.error("Error!", error.message));
 });
+
+// handling error
+
+document.addEventListener("DOMContentLoaded", function () {
+  try {
+    // kode JavaScript Anda
+  } catch (error) {
+    console.error("Terjadi kesalahan:", error);
+  }
+});
