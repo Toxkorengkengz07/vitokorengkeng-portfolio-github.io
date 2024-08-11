@@ -260,3 +260,43 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 })();
+
+// back to top
+// Declare the button element for scrolling to the top
+let mybutton = document.getElementById("btn-scroll-top");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  // Check if the page has been scrolled more than 20px
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    // Show the button by adding the 'show' class
+    mybutton.classList.add("show");
+  } else {
+    // Hide the button by removing the 'show' class
+    mybutton.classList.remove("show");
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
+// form contact
+
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbyfKDfyAAvNdtAIUKUINMiSXs89nn1d2YT_M6cY-RbOOw0cZT6sureylB_4M9-nMV8auw/exec";
+const form = document.forms["vito-contact-form"];
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => console.log("Success!", response))
+    .catch((error) => console.error("Error!", error.message));
+});
