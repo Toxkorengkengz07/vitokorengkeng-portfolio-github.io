@@ -30,6 +30,7 @@
   justify-content: flex-start;
   align-items: center;
   padding: 10px;
+  filter: drop-shadow(1px 1px 20px blue);
 }
 .logo-container img {
   width: 130px;
@@ -55,6 +56,22 @@
   max-width: 100%;
   height: auto;
 }
+/* styles.css diamond*/
+/* .custom-shape {
+  width: 100%;
+  height: auto;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  object-fit: cover;
+} */
+
+/* styles.css oval */
+.custom-shape {
+  width: 100%;
+  height: auto;
+  border-radius: 0%;
+  object-fit: cover;
+}
+
 /* end */
 /* CSS untuk img-about */
 .img-about img {
@@ -274,4 +291,90 @@
   .btn-b2t::before {
     color: rgb(255, 255, 255); /* Dark text color in dark mode */
   }
+}
+/* end */
+/* animasi saat buka website */
+/* CSS Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Apply Animations */
+.jumbotron,
+.navbar {
+  animation: fadeIn 2s ease-out;
+}
+
+.about,
+.skills {
+  animation: slideInUp 1.5s ease-out;
+}
+
+.logo-container img,
+.btn-cv .download-button {
+  animation: zoomIn 1s ease-out;
+}
+
+/* Button Back to Top */
+.btn-b2t {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  border: none;
+  background-color: var(--bs-primary);
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.btn-b2t.show {
+  opacity: 1;
+}
+
+/* Animasi Foto Profil */
+@keyframes rotateInScale {
+  from {
+    transform: rotate(-360deg) scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Terapkan animasi ke foto profil */
+.jumbotron img {
+  animation: rotateInScale 2s ease-out;
 }
