@@ -8,28 +8,122 @@
 } */
 /* .about {
   background-color: rgb(255, 255, 255);
-}
-.contact {
-  background-color: rgb(255, 255, 255);
 } */
+.contact {
+  /* padding-top: 50px; */
+}
 /* sosmed */
-.social-links a {
+/* .social-links a {
   display: inline-block;
   padding: 10px;
   margin: 5px;
   text-align: center;
+} */
+
+/* From Uiverse.io by david-mohseni */
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
 }
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background: #1968e6;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #dd2b4c;
+  color: #fff;
+}
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #070001;
+  color: #fff;
+}
+
 /* end */
 
 .skills {
-  height: 500px; /* Sesuaikan dengan tinggi yang diinginkan */
+  height: 1000px; /* Sesuaikan dengan tinggi yang diinginkan */
 }
 /* image bagian skill */
 .logo-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 10px;
+  padding-bottom: 500px;
   filter: drop-shadow(1px 1px 20px blue);
 }
 .logo-container img {
@@ -55,21 +149,6 @@
 .logo-container img {
   max-width: 100%;
   height: auto;
-}
-/* styles.css diamond*/
-/* .custom-shape {
-  width: 100%;
-  height: auto;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  object-fit: cover;
-} */
-
-/* styles.css oval */
-.custom-shape {
-  width: 100%;
-  height: auto;
-  border-radius: 0%;
-  object-fit: cover;
 }
 
 /* end */
@@ -377,4 +456,51 @@
 /* Terapkan animasi ke foto profil */
 .jumbotron img {
   animation: rotateInScale 2s ease-out;
+}
+
+/* Mengatur tampilan awal ikon sosial media */
+.wrapper {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.icon {
+  position: relative;
+  margin: 0 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Animasi saat elemen muncul */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Terapkan animasi ke setiap ikon */
+.icon {
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Gunakan delay untuk setiap ikon agar animasi berurutan */
+.icon:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.icon:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.icon:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.icon:nth-child(4) {
+  animation-delay: 0.8s;
 }

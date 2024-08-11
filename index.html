@@ -8,28 +8,26 @@
       content="Portofolio Vito Korengkeng, web developer dengan keahlian dalam HTML, CSS, JavaScript, dan React."
     />
 
-    <title>portfolio vito</title>
-    <!-- css bostrap -->
+    <title>Portfolio Vito</title>
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <!-- boostrap icon -->
+    <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    <!-- mycss -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <meta
-      name="google-site-verification"
-      content="5hYFL7z1Dq3bIikydRsIg3Z3YVn5_ekeoyXBcjsSAOI"
-    /> -->
+    <!-- <meta name="google-site-verification" content="5hYFL7z1Dq3bIikydRsIg3Z3YVn5_ekeoyXBcjsSAOI" /> -->
   </head>
   <body>
-    <!-- navbar -->
+    <!-- Navbar -->
     <nav
       class="navbar navbar-expand-lg shadow-lg fixed-top"
       style="background-color: var(--bs-body-bg)"
@@ -66,7 +64,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
-            <li class="nav-items dropdown">
+            <li class="nav-item dropdown">
               <button
                 class="btn nav-link dropdown-toggle"
                 type="button"
@@ -80,7 +78,7 @@
                 ></i>
               </button>
               <ul class="dropdown-menu dropdown-menu-end">
-                <!-- light button -->
+                <!-- Light Theme -->
                 <li>
                   <button
                     class="dropdown-item d-flex align-items-center"
@@ -95,7 +93,7 @@
                     Light
                   </button>
                 </li>
-                <!-- dark button -->
+                <!-- Dark Theme -->
                 <li>
                   <button
                     class="dropdown-item d-flex align-items-center"
@@ -110,7 +108,7 @@
                     Dark
                   </button>
                 </li>
-                <!-- Auto button -->
+                <!-- Auto Theme -->
                 <li>
                   <button
                     class="dropdown-item d-flex align-items-center"
@@ -131,48 +129,91 @@
         </div>
       </div>
     </nav>
-    <!-- akhir navbar -->
+    <!-- End Navbar -->
 
-    <!-- jumbotron -->
-    <!-- jumbotron -->
-    <section class="jumbotron text-center">
+    <!-- Hero Section -->
+    <section class="jumbotron text-center" id="hero">
       <img
         src="images/vrits.jpg"
-        alt="vito korengkeng"
+        alt="Vito Korengkeng"
         class="rounded-circle img-thumbnail"
         width="200"
       />
-      <!-- ======= Hero Section ======= -->
       <section
-        id="hero"
         class="d-flex flex-column justify-content-center align-items-center"
       >
         <h1 class="text-primary">
-          Hi I'm <span class="typed text-primary" type-name-text></span>
+          Hi, I'm <span class="typed text-primary" type-name-text></span>
         </h1>
       </section>
-      <!-- End Hero -->
 
+      <!-- Social Media Links -->
       <div class="social-links mt-3 text-center">
-        <a href="www.linkedin.com/in/vito-korengkeng" class="linkedin"
-          ><i class="bi bi-linkedin"></i
-        ></a>
-        <a href="https://web.facebook.com/vito.korengkeng31" class="facebook"
-          ><i class="bi bi-facebook"></i
-        ></a>
-        <a href="https://www.instagram.com/toxkorengkengz07/" class="instagram"
-          ><i class="bi bi-instagram"></i
-        ></a>
-        <a href="https://github.com/Toxkorengkengz07" class="github"
-          ><i class="bi bi-github"></i
-        ></a>
+        <ul class="wrapper">
+          <!-- Existing icons -->
+          <li class="icon facebook">
+            <span class="tooltip">Facebook</span>
+            <svg
+              viewBox="0 0 320 512"
+              height="1.2em"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+              ></path>
+            </svg>
+          </li>
+
+          <li class="icon instagram">
+            <span class="tooltip">Instagram</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1.2em"
+              fill="currentColor"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+              ></path>
+            </svg>
+          </li>
+
+          <!-- LinkedIn icon -->
+          <li class="icon linkedin">
+            <span class="tooltip">LinkedIn</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              height="1.2em"
+              fill="currentColor"
+            >
+              <path
+                d="M100.28 448H7.4V148.9h92.88zm-46.14-343C24.33 105 0 80.67 0 52.57A52.48 52.48 0 0 1 52.44 0a52.48 52.48 0 0 1 52.44 52.57c0 28.09-24.33 52.42-52.74 52.42zM447.84 448h-92.66V302.4c0-34.73-12.46-58.47-43.62-58.47-23.77 0-37.87 16-44.1 31.41-2.28 5.54-2.85 13.25-2.85 21v151.61H172.84s1.22-246.14 0-271.52h92.66v38.45c-.18.29-.43.62-.61.91h.61v-.91c12.31-19 34.32-46.09 83.51-46.09 60.97 0 106.61 39.83 106.61 125.42z"
+              ></path>
+            </svg>
+          </li>
+
+          <!-- GitHub icon -->
+          <li class="icon github">
+            <span class="tooltip">GitHub</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              height="1.2em"
+              fill="currentColor"
+            >
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.76-1.605-2.665-.3-5.466-1.333-5.466-5.931 0-1.31.467-2.382 1.235-3.22-.123-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.983-.399 3.005-.404 1.02.005 2.048.138 3.006.404 2.29-1.552 3.296-1.23 3.296-1.23.655 1.653.243 2.873.12 3.176.77.838 1.233 1.91 1.233 3.22 0 4.61-2.804 5.625-5.475 5.921.43.37.814 1.102.814 2.222 0 1.604-.014 2.896-.014 3.293 0 .322.217.694.824.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+              />
+            </svg>
+          </li>
+        </ul>
+
+        <!-- Download CV Button -->
         <div class="btn-cv">
           <a href="my-cv/myCV.pdf">
-            <!-- 
-            <button type="button" class="btn btn-outline-primary">
-              Download CV <i class="bi bi-file-earmark-arrow-down-fill"></i>
-            </button>
-            -->
             <button class="download-button">
               <div class="docs">
                 Download CV
@@ -218,6 +259,7 @@
         </div>
       </div>
 
+      <!-- Wave SVG -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#0099ff"
@@ -226,10 +268,9 @@
         ></path>
       </svg>
     </section>
-    <!-- akhir jumbotron -->
+    <!-- End Hero Section -->
 
-    <!-- akhir jumbotron -->
-    <!-- about -->
+    <!-- About Section -->
     <section id="about" class="about">
       <div class="container">
         <div class="row text-center">
@@ -242,10 +283,10 @@
             <img
               src="images/vito-about.JPG"
               class="rounded float-start"
-              alt="foto"
+              alt="Foto"
             />
           </div>
-          <div class="col-4 img-ab float-md-end">
+          <div class="col-4 float-md-end">
             <ul>
               <li>
                 <i class="bi bi-chevron-right"></i> <strong>Name:</strong>
@@ -263,6 +304,7 @@
           </div>
         </div>
       </div>
+      <!-- Wave SVG -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#0099ff"
@@ -271,8 +313,9 @@
         ></path>
       </svg>
     </section>
-    <!-- about akhir -->
-    <!-- skills -->
+    <!-- End About Section -->
+
+    <!-- Skills Section -->
     <section id="skills" class="skills">
       <div class="container">
         <div class="row text-center">
@@ -296,10 +339,10 @@
             />
           </div>
           <div class="col-md-4 col-6 logo-container">
-            <img src="logo/react.png" alt="ReactJs logo" class="img-fluid" />
+            <img src="logo/react.png" alt="ReactJS logo" class="img-fluid" />
           </div>
           <div class="col-md-4 col-6 logo-container">
-            <img src="logo/nodeJS.png" alt="nodeJS logo" class="img-fluid" />
+            <img src="logo/nodeJS.png" alt="NodeJS logo" class="img-fluid" />
           </div>
           <div class="col-md-4 col-6 logo-container">
             <img
@@ -309,16 +352,16 @@
             />
           </div>
           <div class="col-md-4 col-6 logo-container">
-            <img src="logo/mongoDB.png" alt="MongoDb logo" class="img-fluid" />
+            <img src="logo/mongoDB.png" alt="MongoDB logo" class="img-fluid" />
           </div>
           <div class="col-md-4 col-6 logo-container">
-            <img src="logo/oracle.png" alt="oracle logo" class="img-fluid" />
+            <img src="logo/oracle.png" alt="Oracle logo" class="img-fluid" />
           </div>
           <div class="col-md-4 col-6 logo-container">
-            <img src="logo/mySQL.png" alt="mySQL logo" class="img-fluid" />
+            <img src="logo/mySQL.png" alt="MySQL logo" class="img-fluid" />
           </div>
           <div class="col-md-4 col-6 logo-container">
-            <img src="logo/mariaDb.png" alt="mariaDb logo" class="img-fluid" />
+            <img src="logo/mariaDb.png" alt="MariaDB logo" class="img-fluid" />
           </div>
           <div class="col-md-4 col-6 logo-container">
             <img src="logo/canva.png" alt="Canva logo" class="img-fluid" />
@@ -338,97 +381,20 @@
             />
           </div>
           <div class="col-md-4 col-6 logo-container">
-            <img src="logo/figma.png" alt="figma logo" class="img-fluid" />
+            <img src="logo/figma.png" alt="Figma logo" class="img-fluid" />
           </div>
           <div class="col-md-4 col-6 logo-container">
-            <img src="logo/blender.png" alt="blennder logo" class="img-fluid" />
+            <img src="logo/blender.png" alt="Blender logo" class="img-fluid" />
           </div>
           <div class="col-md-4 col-6 logo-container">
-            <img src="logo/unity.png" alt="unity logo" class="img-fluid" />
+            <img src="logo/unity.png" alt="Unity logo" class="img-fluid" />
           </div>
         </div>
-        <!-- <div class="container align-items-center">
-          <div class="row">
-              <hr />
-              <div class="col-md-4 col-6 logo-container">
-                  <img src="logo/HTML.png" alt="HTML logo" class="img-fluid custom-shape" />
-              </div>
-              <div class="col-md-4 col-6 logo-container">
-                  <img src="logo/css.png" alt="CSS logo" class="img-fluid custom-shape" />
-              </div>
-              <div class="col-md-4 col-6 logo-container">
-                  <img src="logo/javascript.png" alt="JavaScript logo" class="img-fluid custom-shape" />
-              </div>
-              <div class="col-md-4 col-6 logo-container">
-                  <img src="logo/react.png" alt="ReactJs logo" class="img-fluid custom-shape" />
-              </div>
-              <div class="col-md-4 col-6 logo-container">
-                  <img src="logo/nodeJS.png" alt="NodeJS logo" class="img-fluid custom-shape" />
-              </div>
-              <div class="col-md-4 col-6 logo-container">
-                  <img src="logo/bootstrap.png" alt="Bootstrap logo" class="img-fluid custom-shape" />
-              </div>
-              <div class="col-md-4 col-6 logo-container">
-                  <img src="logo/mongoDB.png" alt="MongoDB logo" class="img-fluid custom-shape" />
-              </div>
-              <div class="col-md-4 col-6 logo-container">
-                  <img src="logo/oracle.png" alt="Oracle logo" class="img-fluid custom-shape" />
-              </div>
-              <div class="col-md-4 col-6 logo-container">
-                  <img src="logo/mySQL.png" alt="MySQL logo" class="img-fluid custom-shape" />
-              </div>
-              <div class="col-md-4 col-6 logo-container">
-                  <img src="logo/mariaDb.png" alt="MariaDB logo" class="img-fluid custom-shape" />
-              </div>
-              <div class="col-md-4 col-6 logo-container">
-                  <img src="logo/canva.png" alt="Canva logo" class="img-fluid custom-shape" />
-              </div>
-              <div class="col-md-4 col-6 logo-container">
-                  <img src="logo/photoshop.png" alt="Photoshop logo" class="img-fluid custom-shape" />
-              </div>
-              <div class="col-md-4 col-6 logo-container">
-                  <img src="logo/illustrator.png" alt="Illustrator logo" class="img-fluid custom-shape" />
-              </div>
-              <div class="col-md-4 col-6 logo-container">
-                  <img src="logo/figma.png" alt="Figma logo" class="img-fluid custom-shape" />
-              </div>
-              <div class="col-md-4 col-6 logo-container">
-                  <img src="logo/blender.png" alt="Blender logo" class="img-fluid custom-shape" />
-              </div>
-              <div class="col-md-4 col-6 logo-container">
-                  <img src="logo/unity.png" alt="Unity logo" class="img-fluid custom-shape" />
-              </div>
-          </div>
       </div>
-      </div> -->
     </section>
-    <!-- Akhir Skill -->
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <!-- kontak -->
+    <!-- End Skills Section -->
 
+    <!-- Contact Section -->
     <section id="contact" class="contact">
       <div class="container">
         <div class="row text-center">
@@ -445,13 +411,12 @@
                   type="text"
                   class="form-control"
                   id="name"
-                  aria-describedby="name"
-                  placeholder="your name"
+                  placeholder="Your name"
                   name="nama"
                 />
               </div>
               <div class="mb-3">
-                Email
+                <label for="email" class="form-label">Email</label>
                 <input
                   type="email"
                   class="form-control"
@@ -470,18 +435,16 @@
                 ></textarea>
               </div>
               <button type="submit" class="btn btn-outline-primary">
-                kirim
+                Kirim
               </button>
             </form>
           </div>
         </div>
       </div>
     </section>
-    <!-- akhir kontak -->
-    <!-- footer -->
-    <br />
-    <!-- button back to top -->
+    <!-- End Contact Section -->
 
+    <!-- Back to Top Button -->
     <button id="btn-scroll-top" class="btn-b2t" onclick="topFunction()">
       <svg class="svgIcon" viewBox="0 0 384 512">
         <path
@@ -489,20 +452,24 @@
         ></path>
       </svg>
     </button>
+    <!-- End Back to Top Button -->
 
-    <!-- End -->
+    <!-- Footer -->
     <footer class="bg-primary text-white text-center pb-1">
-      <p>Created By Vito korengkeng <a href=""></a></p>
+      <p>Created By Vito Korengkeng</p>
     </footer>
-    <!-- akhir footers -->
+    <!-- End Footer -->
 
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
 
+    <!-- Typed.js -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Custom JS -->
     <script src="js/scripts.js"></script>
   </body>
 </html>
