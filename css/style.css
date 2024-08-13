@@ -27,6 +27,7 @@ body {
     Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial,
     sans-serif;
 }
+
 /*
 img {
   width: 200;
@@ -248,7 +249,7 @@ img {
 .download-button {
   position: relative;
   border-width: 0;
-  color: black;
+  color: var(--bs-body-color);
   font-size: 15px;
   font-weight: 600;
   border-radius: 4px;
@@ -265,11 +266,11 @@ img {
   padding: 0 10px;
   border-radius: 4px;
   z-index: 1;
-  background-color: #00106d; /* Darker blue for better contrast */
-  border: solid 1px #000000; /* Border color adjusted to a brighter blue */
+
+  border: solid 1px var(--bs-body-color); /* Border color adjusted to a brighter blue */
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
   background-color: var(--bs-body-bg);
-  color: black;
+  /* color: var(--bs-body-color); */
 }
 
 .download-button:hover {
@@ -290,10 +291,10 @@ img {
   border-radius: 4px;
   transform: translateY(0%);
   /* background-color: #3b82f6;  */
-  border: solid 1px #000000; /* Border color adjusted to a brighter blue */
+  border: solid 1px var(--bs-body-color); /* Border color adjusted to a brighter blue */
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
   background-color: var(--bs-body-bg);
-  color: black;
+  color: var(--bs-body-color);
 }
 
 .download-button:hover .download {
@@ -325,7 +326,8 @@ img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: rgb(20, 20, 20);
+  /* background-color: rgb(20, 20, 20); */
+  background-color: var(--bs-body-bg);
   border: none;
   font-weight: 600;
   display: flex;
@@ -341,7 +343,8 @@ img {
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease, width 0.3s ease,
     background-color 0.3s ease;
-  background-color: var(--bs-body-bg);
+
+  /* background-color: var(--bs-body-bg); */
 }
 
 .svgIcon {
@@ -350,13 +353,14 @@ img {
 }
 
 .svgIcon path {
-  fill: rgb(255, 255, 255);
+  fill: rgb(0, 0, 0);
 }
 
 .btn-b2t:hover {
   width: 140px;
   border-radius: 50px;
-  background-color: rgb(181, 160, 255);
+  /* background-color: rgb(181, 160, 255); */
+  background-color: var(--bs-body-bg);
 }
 
 .btn-b2t:hover .svgIcon {
@@ -367,7 +371,8 @@ img {
   position: absolute;
   bottom: -20px;
   content: "Back to Top";
-  color: white;
+  /* color: rgb(0, 0, 0); */
+  color: var(--bs-body-color);
   font-size: 0;
   transition: font-size 0.3s ease, bottom 0.3s ease;
 }
@@ -386,24 +391,24 @@ img {
 /* Dark mode adjustments */
 @media (prefers-color-scheme: dark) {
   .btn-b2t {
-    background-color: rgb(17, 144, 212); /* Light background in dark mode */
+    background-color: rgb(229, 241, 247);
     box-shadow: 0px 0px 0px 4px rgba(90, 90, 90, 0.253); /* Softer shadow for dark mode */
   }
 
   .svgIcon path {
-    fill: rgb(255, 255, 255); /* Dark icon color in dark mode */
+    /* fill: rgb(0, 0, 0);  */
+    fill: var(--bs-body-color);
   }
 
   .btn-b2t:hover {
-    background-color: rgb(
-      17,
-      144,
-      212
-    ); /* Adjusted hover color for dark mode */
+    /* background-color: rgb(0, 0, 0);  */
+    background-color: var(--bs-body-bg);
   }
 
   .btn-b2t::before {
-    color: rgb(255, 255, 255); /* Dark text color in dark mode */
+    /* color: rgb(0, 0, 0); */
+    /* background-color: var(--bs-body-bg);  */
+    color: var(--bs-body-color);
   }
 }
 /* end */
@@ -539,3 +544,26 @@ img {
 .icon:nth-child(4) {
   animation-delay: 0.8s;
 }
+/* footer */
+
+.footer {
+  background-color: var(--footer-bg-color);
+  color: var(--bs-body-color);
+  text-align: center;
+  padding: 20px;
+  /* box-shadow: 0 -2px 10px var(--footer-shadow-color); */
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  fill: var(--bs-body-color);
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+/* footer {
+  background-color: #3100f6;
+  padding: 10px;
+  text-align: center;
+  color: var(--bs-body-color);
+} */

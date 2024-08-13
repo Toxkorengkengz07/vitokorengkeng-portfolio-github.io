@@ -111,6 +111,26 @@ const scriptURL =
 const form = document.forms["vito-contact-form"];
 
 form.addEventListener("submit", (e) => {
+  // Validasi form
+  let isValid = true;
+  const inputs = form.querySelectorAll("input, textarea, select");
+
+  inputs.forEach((input) => {
+    if (!input.value.trim()) {
+      isValid = false;
+    }
+  });
+
+  if (!isValid) {
+    Swal.fire({
+      position: "top-end",
+      icon: "error",
+      title: "Isi dulu formnya",
+      showConfirmButton: false,
+      timer: 1500,
+    });
+    return; // Hentikan eksekusi jika form tidak valid
+  }
   // notifikasi
   Swal.fire({
     position: "top-end",
