@@ -126,7 +126,6 @@ form.addEventListener("submit", (e) => {
 });
 
 // handling error
-
 document.addEventListener("DOMContentLoaded", function () {
   try {
     // kode JavaScript Anda
@@ -136,10 +135,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // time
-
 function updateDateTime() {
   const now = new Date();
-
   // Get the day of the week
   const days = [
     "Sunday",
@@ -151,7 +148,6 @@ function updateDateTime() {
     "Saturday",
   ];
   const day = days[now.getDay()];
-
   // Get the date and time
   const date = now.toLocaleDateString();
   const time = now.toLocaleTimeString();
@@ -161,9 +157,7 @@ function updateDateTime() {
   document.getElementById("date").textContent = date;
   document.getElementById("time").textContent = time;
 }
-
 // Update the date and time immediately
 updateDateTime();
-
 // Update the date and time every second
 setInterval(updateDateTime, 1000);

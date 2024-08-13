@@ -1,23 +1,25 @@
 .jumbotron {
-  padding-top: 6rem;
+  padding-top: 10rem;
   background-color: var(--bs-body-bg);
 }
-/* time */
 
+/* 
+body {
+  background-color: #333;
+  color: #fff; 
+  font-family: Arial, sans-serif;
+
+} */
+
+/* time */
 .datetime-container {
   text-align: center;
-  /* background-color: #1c28cf; */
+  background-color: #1c28cf;
   padding: 5px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  color: #fff;
   background-color: var(--bs-body-bg);
 }
-
-/* nav > container {
-  background-color: blue;
-} */
-/*
 
 /* notif message */
 body {
@@ -33,9 +35,9 @@ img {
 /* .about {
   background-color: rgb(255, 255, 255);
 } */
-.contact {
-  /* padding-top: 50px; */
-}
+/* .contact {
+  padding-top: 50px;
+} */
 /* sosmed */
 /* .social-links a {
   display: inline-block;
@@ -246,11 +248,12 @@ img {
 .download-button {
   position: relative;
   border-width: 0;
-  color: white;
+  color: black;
   font-size: 15px;
   font-weight: 600;
   border-radius: 4px;
   z-index: 1;
+  background-color: var(--bs-body-bg);
 }
 
 .download-button .docs {
@@ -263,13 +266,15 @@ img {
   border-radius: 4px;
   z-index: 1;
   background-color: #00106d; /* Darker blue for better contrast */
-  border: solid 1px #005cef; /* Border color adjusted to a brighter blue */
+  border: solid 1px #000000; /* Border color adjusted to a brighter blue */
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  background-color: var(--bs-body-bg);
+  color: black;
 }
 
 .download-button:hover {
-  box-shadow: rgb(255, 255, 255) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+  box-shadow: rgb(245, 240, 240) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -284,9 +289,11 @@ img {
   z-index: -1;
   border-radius: 4px;
   transform: translateY(0%);
-  background-color: #3b82f6; /* Brighter blue for contrast */
-  border: solid 1px #60a5fa; /* Border color adjusted to a brighter blue */
+  /* background-color: #3b82f6;  */
+  border: solid 1px #000000; /* Border color adjusted to a brighter blue */
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+  background-color: var(--bs-body-bg);
+  color: black;
 }
 
 .download-button:hover .download {
