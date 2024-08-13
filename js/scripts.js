@@ -1,17 +1,4 @@
-//  type effect
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   var typed = new Typed(".typed", {
-//     strings: [
-//       "I'm Vito Julio Korengkeng",
-//       "I'm Informatics student at Klabat University",
-//     ],
-//     typeSpeed: 50,
-//     backSpeed: 25,
-//     loop: true,
-//   });
-// });
-
+// type effet
 document.addEventListener("DOMContentLoaded", function () {
   var typed = new Typed(".typed", {
     strings: ["Vito Julio Korengkeng", "Web Developer"],
@@ -20,177 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loop: true,
   });
 });
-
-/*!
- * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
- * Copyright 2011-2024 The Bootstrap Authors
- * Licensed under the Creative Commons Attribution 3.0 Unported License.
- */
-// // dark mode
-// (() => {
-//   "use strict";
-
-//   const getStoredTheme = () => localStorage.getItem("theme");
-//   const setStoredTheme = (theme) => localStorage.setItem("theme", theme);
-
-//   const getPreferredTheme = () => {
-//     const storedTheme = getStoredTheme();
-//     if (storedTheme) {
-//       return storedTheme;
-//     }
-
-//     return window.matchMedia("(prefers-color-scheme: dark)").matches
-//       ? "dark"
-//       : "light";
-//   };
-
-//   const setTheme = (theme) => {
-//     if (theme === "auto") {
-//       document.documentElement.setAttribute(
-//         "data-bs-theme",
-//         window.matchMedia("(prefers-color-scheme: dark)").matches
-//           ? "dark"
-//           : "light"
-//       );
-//     } else {
-//       document.documentElement.setAttribute("data-bs-theme", theme);
-//     }
-//   };
-
-//   setTheme(getPreferredTheme());
-
-//   const showActiveTheme = (theme, focus = false) => {
-//     const themeSwitcher = document.querySelector("#bd-theme");
-
-//     if (!themeSwitcher) {
-//       return;
-//     }
-
-//     const themeSwitcherText = document.querySelector("#bd-theme-text");
-//     const activeThemeIcon = document.querySelector(".theme-icon-active ");
-//     const btnToActive = document.querySelector(
-//       `[data-bs-theme-value="${theme}"]`
-//     );
-//     const iconOfActiveBtn = btnToActive.querySelector("i").dataset.themeIcon;
-
-//     document.querySelectorAll("[data-bs-theme-value]").forEach((element) => {
-//       element.classList.remove("active");
-//       element.setAttribute("aria-pressed", "false");
-//     });
-
-//     btnToActive.classList.add("active");
-//     btnToActive.setAttribute("aria-pressed", "true");
-//     activeThemeIcon.classList.remove(activeThemeIcon.dataset.themeIconActive);
-//     activeThemeIcon.classList.add(iconOfActiveBtn);
-//     activeThemeIcon.dataset.themeIconActive = iconOfActiveBtn;
-//     const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`;
-//     themeSwitcher.setAttribute("aria-label", themeSwitcherLabel);
-
-//     if (focus) {
-//       themeSwitcher.focus();
-//     }
-//   };
-
-//   window
-//     .matchMedia("(prefers-color-scheme: dark)")
-//     .addEventListener("change", () => {
-//       const storedTheme = getStoredTheme();
-//       if (storedTheme !== "light" && storedTheme !== "dark") {
-//         setTheme(getPreferredTheme());
-//       }
-//     });
-
-//   window.addEventListener("DOMContentLoaded", () => {
-//     showActiveTheme(getPreferredTheme());
-
-//     document.querySelectorAll("[data-bs-theme-value]").forEach((toggle) => {
-//       toggle.addEventListener("click", () => {
-//         const theme = toggle.getAttribute("data-bs-theme-value");
-//         setStoredTheme(theme);
-//         setTheme(theme);
-//         showActiveTheme(theme, true);
-//       });
-//     });
-//   });
-// })();
-
-// (() => {
-//   "use strict";
-
-//   const getStoredTheme = () => localStorage.getItem("theme");
-//   const setStoredTheme = (theme) => localStorage.setItem("theme", theme);
-
-//   const getPreferredTheme = () => {
-//     const storedTheme = getStoredTheme();
-//     if (storedTheme) {
-//       return storedTheme;
-//     }
-//     return window.matchMedia("(prefers-color-scheme: dark)").matches
-//       ? "dark"
-//       : "light";
-//   };
-
-//   const setTheme = (theme) => {
-//     if (theme === "auto") {
-//       document.documentElement.setAttribute(
-//         "data-bs-theme",
-//         window.matchMedia("(prefers-color-scheme: dark)").matches
-//           ? "dark"
-//           : "light"
-//       );
-//     } else {
-//       document.documentElement.setAttribute("data-bs-theme", theme);
-//     }
-//   };
-
-//   const showActiveTheme = (theme, focus = false) => {
-//     const activeThemeIcon = document.querySelector(".theme-icon-active");
-//     const btnToActive = document.querySelector(
-//       `[data-bs-theme-value="${theme}"]`
-//     );
-//     const iconOfActiveBtn = btnToActive.querySelector("i").dataset.themeIcon;
-
-//     document.querySelectorAll("[data-bs-theme-value]").forEach((element) => {
-//       element.classList.remove("active");
-//       element.setAttribute("aria-pressed", "false");
-//     });
-
-//     btnToActive.classList.add("active");
-//     btnToActive.setAttribute("aria-pressed", "true");
-//     activeThemeIcon.classList.remove(activeThemeIcon.dataset.themeIconActive);
-//     activeThemeIcon.classList.add(iconOfActiveBtn);
-//     activeThemeIcon.dataset.themeIconActive = iconOfActiveBtn;
-
-//     if (focus) {
-//       btnToActive.focus();
-//     }
-//   };
-
-//   setTheme(getPreferredTheme());
-//   showActiveTheme(getPreferredTheme());
-
-//   window
-//     .matchMedia("(prefers-color-scheme: dark)")
-//     .addEventListener("change", () => {
-//       const storedTheme = getStoredTheme();
-//       if (storedTheme !== "light" && storedTheme !== "dark") {
-//         setTheme(getPreferredTheme());
-//         showActiveTheme(getPreferredTheme());
-//       }
-//     });
-
-//   window.addEventListener("DOMContentLoaded", () => {
-//     document.querySelectorAll("[data-bs-theme-value]").forEach((toggle) => {
-//       toggle.addEventListener("click", () => {
-//         const theme = toggle.getAttribute("data-bs-theme-value");
-//         setStoredTheme(theme);
-//         setTheme(theme);
-//         showActiveTheme(theme, true);
-//       });
-//     });
-//   });
-// })();
-
+// dark mode
 (() => {
   "use strict";
 
@@ -289,12 +106,19 @@ function topFunction() {
 }
 
 // form contact
-
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbyfKDfyAAvNdtAIUKUINMiSXs89nn1d2YT_M6cY-RbOOw0cZT6sureylB_4M9-nMV8auw/exec";
 const form = document.forms["vito-contact-form"];
 
 form.addEventListener("submit", (e) => {
+  // notifikasi
+  Swal.fire({
+    position: "top-end",
+    icon: "success",
+    title: "Message Succes",
+    showConfirmButton: false,
+    timer: 1500,
+  });
   e.preventDefault();
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => console.log("Success!", response))
@@ -310,3 +134,36 @@ document.addEventListener("DOMContentLoaded", function () {
     console.error("Terjadi kesalahan:", error);
   }
 });
+
+// time
+
+function updateDateTime() {
+  const now = new Date();
+
+  // Get the day of the week
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const day = days[now.getDay()];
+
+  // Get the date and time
+  const date = now.toLocaleDateString();
+  const time = now.toLocaleTimeString();
+
+  // Update the content of the divs
+  document.getElementById("day").textContent = day;
+  document.getElementById("date").textContent = date;
+  document.getElementById("time").textContent = time;
+}
+
+// Update the date and time immediately
+updateDateTime();
+
+// Update the date and time every second
+setInterval(updateDateTime, 1000);
