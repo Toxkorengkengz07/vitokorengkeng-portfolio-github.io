@@ -111,6 +111,8 @@ const scriptURL =
 const form = document.forms["vito-contact-form"];
 
 form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
   // Validasi form
   let isValid = true;
   const inputs = form.querySelectorAll("input, textarea, select");
@@ -131,20 +133,27 @@ form.addEventListener("submit", (e) => {
     });
     return; // Hentikan eksekusi jika form tidak valid
   }
-  // notifikasi
+
+  // notifikasi sukses
   Swal.fire({
     position: "top-end",
     icon: "success",
-    title: "Message Succes",
+    title: "Message Sent Successfully",
     showConfirmButton: false,
     timer: 1500,
   });
-  e.preventDefault();
-  fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) => console.log("Success!", response))
+
+  // Mengirim data form
+  fetch(scriptURL, {
+    method: "POST",
+    body: new FormData(form),
+  })
+    .then((response) => {
+      console.log("Success!", response);
+      form.reset(); // Reset form setelah pengiriman sukses
+    })
     .catch((error) => console.error("Error!", error.message));
 });
-
 // handling error
 document.addEventListener("DOMContentLoaded", function () {
   try {
