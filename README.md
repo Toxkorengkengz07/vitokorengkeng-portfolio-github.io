@@ -207,14 +207,3 @@
   </code>
 </pre>
 <button onclick="copyCode('log-file')">Copy</button>
-
-<script>
-  function copyCode(id) {
-    var code = document.getElementById(id).textContent;
-    navigator.clipboard.writeText(code).then(function() {
-      alert('Code copied to clipboard!');
-    }, function(err) {
-      console.error('Could not copy code: ', err);
-    });
-  }
-</script>
