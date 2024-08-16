@@ -113,36 +113,47 @@ const form = document.forms["vito-contact-form"];
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  // Validasi form
-  let isValid = true;
-  const inputs = form.querySelectorAll("input, textarea, select");
+  // notifikasi sukses
+  // Swal.fire({
+  //   position: "top-end",
+  //   icon: "success",
+  //   title: "Message Sent Successfully",
+  //   showConfirmButton: false,
+  //   timer: 1500,
+  // });
+  // Show loading message
 
-  inputs.forEach((input) => {
-    if (!input.value.trim()) {
-      isValid = false;
-    }
+  // Show loading message
+  Swal.fire({
+    title: "Loading...",
+    text: "Please wait while we process your request.",
+    allowOutsideClick: false,
+    didOpen: () => {
+      Swal.showLoading();
+    },
   });
 
-  if (!isValid) {
+  // Set a delay for loading (e.g., 3 seconds)
+  setTimeout(function () {
+    Swal.close();
+
+    // Show success message
     Swal.fire({
       position: "top-end",
-      icon: "error",
-      title: "Isi dulu formnya",
+      icon: "success",
+      title: "Message Sent Successfully",
       showConfirmButton: false,
       timer: 1500,
     });
-    return; // Hentikan eksekusi jika form tidak valid
-  }
 
-  // notifikasi sukses
-  Swal.fire({
-    position: "top-end",
-    icon: "success",
-    title: "Message Sent Successfully",
-    showConfirmButton: false,
-    timer: 1500,
-  });
+    // Simulate form submission (e.g., using fetch)
+    // fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    //   .then(response => console.log('Success!', response))
+    //   .catch(error => console.error('Error!', error.message));
 
+    // Reset form after submission
+    form.reset();
+  }, 3000); // 3000 milliseconds (3 seconds) delay
   // Mengirim data form
   fetch(scriptURL, {
     method: "POST",
