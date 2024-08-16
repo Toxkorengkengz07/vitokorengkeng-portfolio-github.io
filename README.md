@@ -1,9 +1,17 @@
 # portfolio-vito
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+<button class="btn-clipboard" data-clipboard-target="#code-block">
+    Copy Code
+</button>
+<script>
+    new ClipboardJS('.btn-clipboard');
+</script>
+
 #Basic Git Commands
 
 - Inisialisasi Repository Baru
-  '''git init
+  git init
 
 - Menambahkan File ke Staging Area
   git add filename.txt
