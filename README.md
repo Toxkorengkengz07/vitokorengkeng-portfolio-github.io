@@ -1,11 +1,25 @@
 # portfolio-vito
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
-<button class="btn-clipboard" data-clipboard-target="#code-block">
-    Copy Code
-</button>
+<h3>Example Code</h3>
+
+<pre>
+  <code id="code-to-copy">
+    // Your code goes here
+    console.log('Hello, world!');
+  </code>
+</pre>
+
+<button onclick="copyCode()">Copy</button>
+
 <script>
-    new ClipboardJS('.btn-clipboard');
+  function copyCode() {
+    var code = document.getElementById('code-to-copy').textContent;
+    navigator.clipboard.writeText(code).then(function() {
+      alert('Code copied to clipboard!');
+    }, function(err) {
+      console.error('Could not copy code: ', err);
+    });
+  }
 </script>
 
 #Basic Git Commands
