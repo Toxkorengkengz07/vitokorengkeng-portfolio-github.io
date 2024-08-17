@@ -153,7 +153,7 @@ form.addEventListener("submit", (e) => {
 
     // Reset form after submission
     form.reset();
-  }, 3000); // 3000 milliseconds (3 seconds) delay
+  }, 2000); // 3000 milliseconds (3 seconds) delay
   // Mengirim data form
   fetch(scriptURL, {
     method: "POST",
@@ -201,3 +201,26 @@ function updateDateTime() {
 updateDateTime();
 // Update the date and time every second
 setInterval(updateDateTime, 1000);
+
+// animasi scrol
+document.addEventListener("DOMContentLoaded", function () {
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1,
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  const elementsToAnimate = document.querySelectorAll(".scroll-animate");
+  elementsToAnimate.forEach((element) => {
+    observer.observe(element);
+  });
+});

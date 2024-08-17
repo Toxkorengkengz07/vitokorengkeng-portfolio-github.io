@@ -3,14 +3,6 @@
   --text-shadow-dark: rgba(255, 255, 255, 0.9) 0px 0px 19px;
   --text-color-light: #000;
   --text-color-dark: #fff;
-
-  /* Light mode colors */
-  --footer-bg-light: #000000;
-  --footer-text-light: #ffffff;
-
-  /* Dark mode colors */
-  --footer-bg-dark: #2776c5;
-  --footer-text-dark: #e9ecef;
 }
 
 .jumbotron {
@@ -18,39 +10,35 @@
   background-color: var(--bs-body-bg);
 }
 
-/* image profile */
-
-/* anismasi  circuit*/
-/* type effect color */
-/* .type-text,
-.typed {
-  text-shadow: rgba(0, 0, 0, 0.9) 0px 0px 19px;
-  color: #000; /* Warna teks default untuk mode terang\
+/* image logo VJK navbar */
+/* Gaya dasar untuk gambar */
+.img-logo {
+  filter: drop-shadow(1px 1px 20px rgb(0, 0, 0));
+  animation: fadeIn 1.5s ease-in-out;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
+/* Gaya animasi saat gambar di-hover */
+.img-logo:hover {
+  transform: scale(1.2); /* Membesarkan ukuran gambar */
+  filter: drop-shadow(
+    1px 1px 20px rgb(255, 255, 255)
+  ); /* Mengubah warna drop-shadow */
+}
 
-@media (prefers-color-scheme: dark) {
-  .type-text,
-  .typed {
-    text-shadow: rgba(255, 255, 255, 0.9) 0px 0px 19px;
-    color: #fff; /* Warna teks untuk mode gelap 
+/* Keyframes untuk animasi saat website dibuka */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
+/* end */
 
-.d-flex {
-  display: flex;
-}
-
-.flex-column {
-  flex-direction: column;
-}
-
-.align-items-center {
-  align-items: center;
-} */
-/* Default styles (light mode) */
-/* Default styles (light mode) */
-/* Default styles (light mode) */
 .type-text,
 .typed {
   text-shadow: rgba(0, 0, 0, 0.9) 0px 0px 19px; /* Shadow hitam */
@@ -193,7 +181,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  filter: drop-shadow(1px 1px 20px blue);
+  /* filter: drop-shadow(1px 1px 20px blue); */
 }
 
 /* Logo image styles */
@@ -286,7 +274,6 @@ body {
 /* about info */
 .about-info {
   padding: 20px; /* Padding around the contact section */
-
   background-color: var(--bs-body-bg);
 }
 .about-info ul {
@@ -643,22 +630,24 @@ body {
 }
 /* footer */
 
-footer {
-  background-color: var(--footer-bg-light);
-  color: var(--footer-text-light);
-  padding: 10px;
-  text-align: center;
-}
-
-.footer p {
-  margin: 0;
-  font-size: 1em;
-}
-
-/* Dark mode styles */
-@media (prefers-color-scheme: dark) {
-  footer {
-    background-color: var(--footer-bg-dark);
-    color: var(--footer-text-dark);
+/* Animasi untuk elemen-elemen yang muncul saat digulir */
+@keyframes fadeInScroll {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-animate.visible {
+  animation: fadeInScroll 1s forwards;
 }
