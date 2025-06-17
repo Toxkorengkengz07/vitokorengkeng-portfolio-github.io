@@ -73,6 +73,13 @@ body {
 
 /* sosmed */
 /* From Uiverse.io by david-mohseni */
+.wrapper li:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
 .wrapper {
   display: inline-flex;
   list-style: none;
@@ -81,7 +88,7 @@ body {
   padding-top: 40px;
   font-family: "Poppins", sans-serif;
   justify-content: center;
-  /* new */
+
   --text-shadow: var(--text-shadow-light);
   --text-color: var(--text-color-light);
   background-color: var(--bs-body-bg);
@@ -166,8 +173,8 @@ body {
 .wrapper .github:hover,
 .wrapper .github:hover .tooltip,
 .wrapper .github:hover .tooltip::before {
-  background: #070001;
-  color: #fff;
+  background: #000000;
+  color: #ffffff;
 }
 
 /* end */
