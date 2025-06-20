@@ -176,6 +176,9 @@ body {
   background: #000000;
   color: #ffffff;
 }
+.icon svg {
+  /* color: bg(--bs-body-color); */
+}
 
 /* end */
 /* 
