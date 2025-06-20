@@ -7,6 +7,15 @@ document.addEventListener("DOMContentLoaded", function () {
     loop: true,
   });
 });
+// script click sosial media
+// $(document).ready(function () {
+//   $("a.linkedin").on("click", function (e) {
+//     e.preventDefault(); // cegah reload
+//     var profileUrl = "https://www.linkedin.com/in/vito-korengkeng";
+//     window.open(profileUrl, "_blank");
+//   });
+// });
+
 // dark mode
 (() => {
   "use strict";
